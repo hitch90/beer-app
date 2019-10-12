@@ -1,0 +1,14 @@
+@import "~src/app/styles/mixins";
+.columns {
+  max-width: 1600px;
+  padding: 10px;
+  margin: 0 auto;
+  @include breakpoint(tablet_small) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+  @include breakpoint(1620px) {
+    padding: 10px 0;
+  }
+}

@@ -1,3 +1,10 @@
 .full-width {
   width: 100%;
 }
+
+.beers-list {
+  &__pagination {
+    text-align: center;
+    padding: 15px ;
+  }
+}

@@ -3,7 +3,7 @@ import { BeersComponent } from './beers.component';
 import { BeersRoutingModule } from './beers-routing.module';
 import { BeersListComponent } from './beers-list/beers-list.component';
 import {
-  MatAutocompleteModule,
+  MatAutocompleteModule, MatButtonModule,
   MatFormFieldModule,
   MatInputModule,
   MatOptionModule
@@ -22,6 +22,7 @@ import {CoreModule} from '../core/core.module';
     MatAutocompleteModule,
     MatInputModule,
     MatOptionModule,
+    MatButtonModule,
     BeersRoutingModule,
     CoreModule
   ],

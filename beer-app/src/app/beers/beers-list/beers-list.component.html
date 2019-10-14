@@ -15,4 +15,9 @@
   </mat-autocomplete>
 </mat-form-field>
 
-<app-beers-item *ngFor="let beer of beers" [beer]="beer"></app-beers-item>
+<div class="beers-list">
+  <app-beers-item *ngFor="let beer of (beers | slice: 0:currentPage * 15)" [beer]="beer"></app-beers-item>
+  <div class="beers-list__pagination">
+    <button mat-button (click)="nextPage($event)" color="primary" *ngIf="currentPage < pages">Load more...</button>
+  </div>
+</div>

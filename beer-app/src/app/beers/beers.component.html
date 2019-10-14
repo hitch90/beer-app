@@ -1,12 +1,12 @@
 <div class="columns" *ngIf="(brewers$ | async) as brewers; else loading">
   <div class="column">
-    <app-beers-list [brewers]="brewers"></app-beers-list>
+    <app-beers-list [brewers]="brewers" index="1"></app-beers-list>
   </div>
   <div class="column">
-    <app-beers-list [brewers]="brewers"></app-beers-list>
+    <app-beers-list [brewers]="brewers" index="2"></app-beers-list>
   </div>
   <div class="column">
-    <app-beers-list [brewers]="brewers"></app-beers-list>
+    <app-beers-list [brewers]="brewers" index="3"></app-beers-list>
   </div>
 </div>
 

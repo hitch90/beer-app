@@ -1,6 +1,6 @@
 <div class="beer" *ngIf="beer">
   <div class="beer__image">
-    <img [src]="beer.image_url" [alt]="beer.name" default="https://via.placeholder.com/40" />
+    <img [src]="beer.image_url" [alt]="beer.name" default="https://via.placeholder.com/40" (click)="onOpenPreview()" />
   </div>
   <div class="beer__content">
     <h2 class="beer__name">
@@ -13,4 +13,7 @@
       Price: {{ beer.price }} per liter
     </span>
   </div>
+  <app-lightbox (close)="onClosePreview()" *ngIf="openPreview">
+    <img [src]="beer.image_url" [alt]="beer.name" default="https://via.placeholder.com/40" />
+  </app-lightbox>
 </div>

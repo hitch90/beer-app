@@ -1,1 +1,8 @@
-<p>lightbox works!</p>
+<div class="lightbox">
+  <div class="lightbox__content">
+    <span class="lightbox__close" (click)="onClose()">
+      <mat-icon>close</mat-icon>
+    </span>
+    <ng-content></ng-content>
+  </div>
+</div>

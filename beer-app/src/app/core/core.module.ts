@@ -8,7 +8,7 @@ import { LightboxComponent } from './lightbox/lightbox.component';
 @NgModule({
   imports: [RouterModule, CommonModule, MatToolbarModule, MatIconModule, MatButtonModule],
   declarations: [ HeaderComponent, LightboxComponent ],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, LightboxComponent],
   providers: []
 })
 export class CoreModule {}

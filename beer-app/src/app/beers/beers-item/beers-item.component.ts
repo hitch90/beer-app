@@ -7,9 +7,18 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class BeersItemComponent implements OnInit {
   @Input() beer;
+  openPreview = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onOpenPreview() {
+    this.openPreview = true;
+  }
+
+  onClosePreview() {
+    this.openPreview = false;
   }
 
 }

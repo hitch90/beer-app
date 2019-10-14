@@ -1,0 +1,39 @@
+.beer {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-gap: 20px;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  &__image {
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 100%;
+    }
+  }
+  &__content {
+    color: #222222;
+
+  }
+  &__name {
+    margin: 0;
+    padding: 0 0 5px;
+    font: 700 18px/1.6 'Source Sans Pro';
+  }
+  &__type {
+    margin: 0;
+    padding: 0 0 5px;
+    font: 400 14px/1.6 'Source Sans Pro';
+  }
+  &__price {
+    margin: 0;
+    padding: 0;
+    font: 700 14px/1.6 'Source Sans Pro';
+  }
+
+}

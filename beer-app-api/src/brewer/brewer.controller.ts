@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { BrewerService } from './brewer.service';
 
 @Controller('brewer')
@@ -9,9 +9,4 @@ export class BrewerController {
   findAll() {
     return this.brewerService.findAll();
   }
-
-  // @Get(':id')
-  // findOne(@Param('id') id): Promise<any> {
-  //   return this.bewerService.findOne(id);
-  // }
 }

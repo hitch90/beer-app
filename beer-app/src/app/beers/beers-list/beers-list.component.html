@@ -6,7 +6,7 @@
     matInput
     [formControl]="selectedBrewer"
     [matAutocomplete]="auto"
-    (ngModelChange)="onChange()"
+    (ngModelChange)="getBeers($event)"
   />
   <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
     <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
@@ -14,3 +14,5 @@
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
+
+<app-beers-item *ngFor="let beer of beers" [beer]="beer"></app-beers-item>

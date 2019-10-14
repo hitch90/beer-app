@@ -11,6 +11,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BeersItemComponent } from './beers-item/beers-item.component';
+import {ImagePreloadDirective} from '../core/directives/image-preload.directive';
 
 @NgModule({
   imports: [
@@ -22,7 +23,7 @@ import { BeersItemComponent } from './beers-item/beers-item.component';
     MatOptionModule,
     BeersRoutingModule
   ],
-  declarations: [BeersComponent, BeersListComponent, BeersItemComponent],
+  declarations: [BeersComponent, BeersListComponent, BeersItemComponent, ImagePreloadDirective],
   exports: [BeersComponent]
 })
 export class BeersModule {}

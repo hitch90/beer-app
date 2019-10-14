@@ -1,1 +1,16 @@
-<p>beers-item works!</p>
+<div class="beer" *ngIf="beer">
+  <div class="beer__image">
+    <img [src]="beer.image_url" [alt]="beer.name" default="https://via.placeholder.com/40" />
+  </div>
+  <div class="beer__content">
+    <h2 class="beer__name">
+      {{ beer.name }}
+    </h2>
+    <h3 class="beer__type">
+      Type: {{ beer.type }}
+    </h3>
+    <span class="beer__price">
+      Price: {{ beer.price }} per liter
+    </span>
+  </div>
+</div>

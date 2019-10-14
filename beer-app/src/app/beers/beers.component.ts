@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BrewerService } from '../services/brewer.service';
 import {Observable} from 'rxjs';
+import {BeerService} from '../services/beer.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {Observable} from 'rxjs';
 })
 export class BeersComponent implements OnInit {
   brewers$: Observable<any>;
-  constructor(private brewerService: BrewerService) {}
+  constructor(private brewerService: BrewerService, private beerService: BeerService) {}
 
   ngOnInit() {
     this.brewerService.getBrewers().subscribe(data => {
@@ -19,7 +20,4 @@ export class BeersComponent implements OnInit {
     this.brewers$ = this.brewerService.getBrewers();
   }
 
-  getBeers(e) {
-    console.log(e.value);
-  }
 }

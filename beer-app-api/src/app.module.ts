@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { BrewerModule } from './brewer/brewer.module';
+import { BeerModule } from './beer/beer.module';
 
 @Module({
-  imports: [BrewerModule],
+  imports: [BeerModule, BrewerModule],
   controllers: [],
   providers: [],
 })

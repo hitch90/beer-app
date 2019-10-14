@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BewerService } from './bewer.service';
+import { BrewerService } from './bewer.service';
 
 describe('BewerService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: BewerService = TestBed.get(BewerService);
+    const service: BrewerService = TestBed.get(BrewerService);
     expect(service).toBeTruthy();
   });
 });

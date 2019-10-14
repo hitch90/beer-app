@@ -1,11 +1,15 @@
-<div class="columns">
+<div class="columns" *ngIf="(brewers$ | async) as brewers; else loading">
   <div class="column">
-    <app-beers-list></app-beers-list>
+    <app-beers-list [brewers]="brewers" (selectBrewer)="getBeers($event)"></app-beers-list>
   </div>
   <div class="column">
-    <app-beers-list></app-beers-list>
+    <app-beers-list [brewers]="brewers"></app-beers-list>
   </div>
   <div class="column">
-    <app-beers-list></app-beers-list>
+    <app-beers-list [brewers]="brewers"></app-beers-list>
   </div>
 </div>
+
+<ng-template #loading>
+  Loading stuff...
+</ng-template>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BewerService } from '../services/bewer.service';
+import { BrewerService } from '../services/brewer.service';
+import {Observable} from 'rxjs';
+
 
 @Component({
   selector: 'app-beers',
@@ -7,11 +9,17 @@ import { BewerService } from '../services/bewer.service';
   styleUrls: ['./beers.component.scss']
 })
 export class BeersComponent implements OnInit {
-  constructor(private bewerService: BewerService) {}
+  brewers$: Observable<any>;
+  constructor(private brewerService: BrewerService) {}
 
   ngOnInit() {
-    this.bewerService.getBewers().subscribe(data => {
-      console.log(data);
+    this.brewerService.getBrewers().subscribe(data => {
+      console.log(data)
     });
+    this.brewers$ = this.brewerService.getBrewers();
+  }
+
+  getBeers(e) {
+    console.log(e.value);
   }
 }

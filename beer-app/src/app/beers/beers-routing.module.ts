@@ -4,8 +4,9 @@ import {BeersComponent} from './beers.component';
 
 const routes: Routes = [
   {
-    path: 'beers',
-    component: BeersComponent
+    path: '',
+    component: BeersComponent,
+    pathMatch: 'full'
   }
 ];
 

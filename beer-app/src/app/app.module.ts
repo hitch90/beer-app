@@ -4,14 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {BeersModule} from './beers/beers.module';
-import {CoreModule} from './core/core.module';
+import { BeersModule } from './beers/beers.module';
+import { CoreModule } from './core/core.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
+    HttpClientModule,
     CoreModule,
     BrowserModule,
     AppRoutingModule,
@@ -21,4 +21,4 @@ import {CoreModule} from './core/core.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

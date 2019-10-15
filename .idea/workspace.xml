@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9317f737-2761-469d-8ed3-34770c6302c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/beers/beers.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/beers/beers.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/core.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,17 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+            <state relative-caret-position="292">
+              <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -47,56 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="41" selection-start-line="41" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="271">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,13 +47,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/core.module.ts">
+        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="92" lean-forward="true" selection-start-line="9" selection-start-column="92" selection-end-line="9" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -141,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/core/core.module.ts" />
         <option value="$PROJECT_DIR$/src/app/core/header/header.component.html" />
         <option value="$PROJECT_DIR$/src/app/core/header/header.component.scss" />
         <option value="$PROJECT_DIR$/.prettierrc" />
@@ -184,13 +152,14 @@
         <option value="$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss" />
         <option value="$PROJECT_DIR$/beer-app/src/index.html" />
         <option value="$PROJECT_DIR$/beer-app/src/app/services/settings.service.ts" />
-        <option value="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts" />
-        <option value="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html" />
         <option value="$PROJECT_DIR$/beer-app/src/app/core/core.module.ts" />
-        <option value="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss" />
         <option value="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.html" />
         <option value="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html" />
+        <option value="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss" />
         <option value="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html" />
+        <option value="$PROJECT_DIR$/beer-app/src/app/core/header/header.component.scss" />
+        <option value="$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts" />
         <option value="$PROJECT_DIR$/beer-app/src/app/core/options/options.component.ts" />
       </list>
     </option>
@@ -378,7 +347,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/app.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/beers/beers.module.ts" />
     <entry file="file://$PROJECT_DIR$/src/app/app.module.ts" />
@@ -594,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -648,17 +609,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html">
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        <state relative-caret-position="477">
+          <caret line="41" selection-start-line="41" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -672,37 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="41" selection-start-line="41" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -710,20 +650,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="92" lean-forward="true" selection-start-line="9" selection-start-column="92" selection-end-line="9" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-item/beers-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/header/header.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/src/app/core/options/options.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="271">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>

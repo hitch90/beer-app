@@ -11,4 +11,8 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
-<app-options *ngIf="optionsModal" (close)="showOptions()"></app-options>
+<app-options
+  class="header__options"
+  [ngClass]="{ 'is-visible': optionsModal }"
+  (close)="showOptions()"
+></app-options>

@@ -8,10 +8,17 @@ import {SettingsService} from '../../services/settings.service';
 })
 export class OptionsComponent implements OnInit {
   @Output() close: EventEmitter<void> = new EventEmitter();
-  darkTheme = localStorage.getItem('theme') || false;
+  darkTheme = localStorage.getItem('theme') || 'false';
   perPage = 15;
   sortBy = 'name';
-  constructor(private settingsService: SettingsService) {}
+  constructor(private settingsService: SettingsService) {
+    const options = localStorage.getItem('options');
+    if (options) {
+      const optObj = JSON.parse(options);
+      this.perPage = optObj.perPage;
+      this.sortBy = optObj.sortBy;
+    }
+  }
 
   ngOnInit() {
     this.setTheme(!(this.darkTheme == 'false'));

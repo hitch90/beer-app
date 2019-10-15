@@ -2,4 +2,14 @@
   &__actions {
     margin: 0 0 0 auto;
   }
+  &__options {
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    position: relative;
+    &.is-visible {
+      z-index: 1000;
+      opacity: 1;
+    }
+  }
 }

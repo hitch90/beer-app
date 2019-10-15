@@ -1,9 +1,9 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import {Observable, Subscription} from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { BeerService } from '../../services/beer.service';
-import {SettingsService} from '../../services/settings.service';
+import { SettingsService } from '../../services/settings.service';
 
 interface IBeer {
   name: string;
@@ -26,21 +26,14 @@ export class BeersListComponent implements OnInit {
   pages = 1;
   beers: IBeer[];
   loading = false;
-  settings: any[] = [];
   settings$: Subscription;
   perPage = 15;
   sortBy = 'name';
 
-  constructor(private beerService: BeerService, private settingsService: SettingsService) {
-    this.settings$ = this.settingsService.getSettings().subscribe(settings => {
-      if (settings) {
-        this.perPage = settings.perPage;
-        this.sortBy = settings.sortBy;
-      } else {
-        this.settings = [];
-      }
-    });
-  }
+  constructor(
+    private beerService: BeerService,
+    private settingsService: SettingsService
+  ) {}
 
   ngOnInit() {
     this.loadFromStorage();
@@ -49,6 +42,17 @@ export class BeersListComponent implements OnInit {
       map(value => (typeof value === 'string' ? value : value.name)),
       map(name => (name ? this._filter(name) : this.brewers.slice()))
     );
+
+    this.settings$ = this.settingsService.getSettings().subscribe(settings => {
+      if (settings) {
+        const { perPage, sortBy } = settings;
+        if (this.perPage != perPage || this.sortBy != sortBy) {
+          this.perPage = settings.perPage;
+          this.sortBy = settings.sortBy;
+          this.getBeers();
+        }
+      }
+    });
   }
 
   private _filter(name: string): any[] {
@@ -62,22 +66,29 @@ export class BeersListComponent implements OnInit {
     return brewer ? brewer.name : undefined;
   }
 
-  onChange(e) {
-    this.getBeers(e.option.value);
+  onChange() {
+    this.getBeers();
   }
 
-  getBeers(e) {
-    const { name } = e;
+  getBeers() {
+    this.setDefaults();
+    if (this.selectedBrewer.value) {
+      const { name } = this.selectedBrewer.value;
+      localStorage.setItem(`brewer${this.index}`, name);
+      this.beerService.getByBrewer(name, this.sortBy).subscribe(data => {
+        this.loading = false;
+        this.pages = Math.ceil(data.length / this.perPage);
+        this.beers = data;
+      });
+    }
+  }
+
+  setDefaults() {
     this.beers = [];
     this.pages = 1;
     this.currentPage = 1;
     this.loading = true;
-    localStorage.setItem(`brewer${this.index}`, name);
-    this.beerService.getByBrewer(name, this.sortBy).subscribe(data => {
-      this.loading = false;
-      this.pages = Math.ceil(data.length / this.perPage);
-      this.beers = data;
-    });
+    localStorage.setItem(`brewer${this.index}`, '');
   }
 
   loadFromStorage() {
@@ -86,7 +97,7 @@ export class BeersListComponent implements OnInit {
       this.selectedBrewer.patchValue({
         name: fromStorage
       });
-      this.getBeers(this.selectedBrewer.value);
+      this.getBeers();
     }
   }
 

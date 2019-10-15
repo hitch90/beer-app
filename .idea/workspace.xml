@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9317f737-2761-469d-8ed3-34770c6302c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/beer-app-api/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beer-app-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beer-app/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beer-app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app-api/src/beer/beer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app-api/src/beer/beer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app-api/src/brewer/brewer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app-api/src/brewer/brewer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer-app/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer-app-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/beer-app-api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beer-app/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -105,10 +89,10 @@
         <option value="$PROJECT_DIR$/beer-app-api/src/brewer/brewer.service.ts" />
         <option value="$PROJECT_DIR$/beer-app/nginx.conf" />
         <option value="$PROJECT_DIR$/beer-app/src/environments/environment.prod.ts" />
-        <option value="$PROJECT_DIR$/beer-app-api/Dockerfile" />
         <option value="$PROJECT_DIR$/beer-app-api/.dockerignore" />
         <option value="$PROJECT_DIR$/beer-app/.dockerignore" />
         <option value="$PROJECT_DIR$/beer-app/Dockerfile" />
+        <option value="$PROJECT_DIR$/beer-app-api/Dockerfile" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
@@ -130,11 +114,6 @@
             <path>
               <item name="sts-task" type="b2602c69:ProjectViewProjectNode" />
               <item name="sts-task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sts-task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sts-task" type="462c0819:PsiDirectoryNode" />
-              <item name="beer-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sts-task" type="b2602c69:ProjectViewProjectNode" />
@@ -237,13 +216,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beer-app-api/node_modules/@nestjs/common/http/http.service.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/src/app/beers/beers-list/beers-list.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -579,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beer-app-api/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beer-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -627,10 +592,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/beer-app-api/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beer-app-api/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

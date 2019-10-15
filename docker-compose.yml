@@ -1,0 +1,15 @@
+version: '3'
+services:
+    server:
+        build: ./beer-app-api
+        expose:
+            - 3000
+        ports:
+            - 3000:3000
+        command: npm run start:prod
+    client:
+        build: ./beer-app
+        ports:
+            - 4200:80
+        links:
+            - server

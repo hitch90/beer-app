@@ -5,9 +5,6 @@ import { map } from 'rxjs/operators';
 export class BeerService {
   constructor(private readonly httpService: HttpService) {}
 
-  findAll() {
-    return 'beer';
-  }
   async findByBrewer(brewer) {
     return this.httpService.get('http://ontariobeerapi.ca/beers').pipe(
       map(response => response.data),

@@ -7,7 +7,6 @@ import {map} from 'rxjs/operators';
 @Injectable()
 export class BrewerService {
   constructor(private readonly httpService: HttpService) {}
-
   async findAll() {
     return this.httpService.get('http://ontariobeerapi.ca/beers').pipe(
       map(response => response.data),
@@ -23,10 +22,4 @@ export class BrewerService {
       }),
     );
   }
-
-  //
-  //
-  // findOne(id: number): Promise<any> {
-  //   return this.cityRepository.findOne(id, { relations: ['country'] });
-  // }
 }

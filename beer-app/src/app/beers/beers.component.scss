@@ -1,4 +1,4 @@
-@import "~src/app/styles/mixins";
+@import '~src/app/styles/mixins';
 .columns {
   max-width: 1600px;
   padding: 10px;
@@ -10,5 +10,20 @@
   }
   @include breakpoint(1620px) {
     padding: 10px 0;
+  }
+  .column {
+    &:not(:last-of-type) {
+      padding: 0 0 20px;
+      @include breakpoint(tablet_small) {
+        padding: 0;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.beers {
+  &__loader {
+    margin: 30px auto;
   }
 }

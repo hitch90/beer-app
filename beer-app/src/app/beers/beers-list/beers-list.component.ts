@@ -1,8 +1,16 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { Observable } from 'rxjs';
+import {Observable, Subscription} from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { BeerService } from '../../services/beer.service';
+import {SettingsService} from '../../services/settings.service';
+
+interface IBeer {
+  name: string;
+  type: string;
+  price: number;
+  image_url: string;
+}
 
 @Component({
   selector: 'app-beers-list',
@@ -16,9 +24,23 @@ export class BeersListComponent implements OnInit {
   filteredOptions: Observable<any[]>;
   currentPage = 1;
   pages = 1;
-  beers;
+  beers: IBeer[];
+  loading = false;
+  settings: any[] = [];
+  settings$: Subscription;
+  perPage = 15;
+  sortBy = 'name';
 
-  constructor(private beerService: BeerService) {}
+  constructor(private beerService: BeerService, private settingsService: SettingsService) {
+    this.settings$ = this.settingsService.getSettings().subscribe(settings => {
+      if (settings) {
+        this.perPage = settings.perPage;
+        this.sortBy = settings.sortBy;
+      } else {
+        this.settings = [];
+      }
+    });
+  }
 
   ngOnInit() {
     this.loadFromStorage();
@@ -40,11 +62,20 @@ export class BeersListComponent implements OnInit {
     return brewer ? brewer.name : undefined;
   }
 
+  onChange(e) {
+    this.getBeers(e.option.value);
+  }
+
   getBeers(e) {
-    localStorage.setItem(`brewer${this.index}`, e.name);
-    this.beerService.getByBrewer(e.name).subscribe(data => {
-      this.pages = Math.ceil(data.length / 15);
-      this.currentPage = 1;
+    const { name } = e;
+    this.beers = [];
+    this.pages = 1;
+    this.currentPage = 1;
+    this.loading = true;
+    localStorage.setItem(`brewer${this.index}`, name);
+    this.beerService.getByBrewer(name, this.sortBy).subscribe(data => {
+      this.loading = false;
+      this.pages = Math.ceil(data.length / this.perPage);
       this.beers = data;
     });
   }

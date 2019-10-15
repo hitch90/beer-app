@@ -1,0 +1,50 @@
+.options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  &__content {
+    max-width: 300px;
+    background: #fff;
+    width: 100%;
+    border-radius: 3px;
+  }
+  &__title {
+    padding: 20px;
+    margin: 0 0 20px;
+    font: 400 16px/1.6 'Source Sans Pro';
+    border-bottom: 1px solid #eee;
+  }
+  &__list {
+    padding: 0 20px 20px;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+  }
+  &__action {
+    padding: 0 20px 20px;
+  }
+}
+::ng-deep {
+  .dark-theme {
+    .options {
+      &__content {
+        background: #37474f;
+        color: #fff;
+      }
+      &__item {
+        border-color: #455a64;
+
+      }
+    }
+  }
+}

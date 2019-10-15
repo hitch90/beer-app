@@ -4,10 +4,11 @@
       <span>Beer App</span>
 
       <div class="header__actions">
-        <button mat-button>
-          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+        <button mat-button (click)="showOptions()">
+          <mat-icon aria-hidden="false">settings_applications</mat-icon> Options
         </button>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
 </header>
+<app-options *ngIf="optionsModal" (close)="showOptions()"></app-options>

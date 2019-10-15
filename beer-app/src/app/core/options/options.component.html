@@ -1,0 +1,38 @@
+<div class="options">
+  <div class="options__content">
+    <h2 class="options__title">Change options</h2>
+    <ul class="options__list">
+      <li class="options__item">
+        <mat-slide-toggle
+          [checked]="darkTheme"
+          (change)="toggleDarkTheme($event)"
+          >Dark theme</mat-slide-toggle
+        >
+      </li>
+      <li class="options__item">
+        <mat-form-field>
+          <mat-label>Items per page</mat-label>
+          <mat-select [(value)]="perPage">
+            <mat-option *ngFor="let no of [15, 30, 50]" [value]="no">
+              {{ no }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+      <li class="options__item">
+        <mat-form-field>
+          <mat-label>Sort by</mat-label>
+          <mat-select [(value)]="sortBy">
+            <mat-option *ngFor="let no of ['name', 'type', 'price']" [value]="no">
+              {{ no }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </li>
+    </ul>
+    <footer class="options__action">
+      <button (click)="onSave()" mat-raised-button color="primary">Save</button>
+      <button (click)="onClose()" mat-button color="accent">Cancel</button>
+    </footer>
+  </div>
+</div>

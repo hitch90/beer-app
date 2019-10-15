@@ -6,9 +6,8 @@
     matInput
     [formControl]="selectedBrewer"
     [matAutocomplete]="auto"
-    (ngModelChange)="getBeers($event)"
   />
-  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onChange($event)">
     <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
       {{option.name}}
     </mat-option>
@@ -16,7 +15,9 @@
 </mat-form-field>
 
 <div class="beers-list">
-  <app-beers-item *ngFor="let beer of (beers | slice: 0:currentPage * 15)" [beer]="beer"></app-beers-item>
+  <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+
+  <app-beers-item *ngFor="let beer of (beers | slice: 0:currentPage * perPage)" [beer]="beer"></app-beers-item>
   <div class="beers-list__pagination">
     <button mat-button (click)="nextPage($event)" color="primary" *ngIf="currentPage < pages">Load more...</button>
   </div>
